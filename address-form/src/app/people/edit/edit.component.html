@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>{{header}}</h2>
+
+    <form (ngSumbit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group">
+            <label for="">Id</label>
+            <input type="text" class="form-control" ngModel name="id">
+            </div>
+            <div class="form-group">
+             <label for="">Name</label>
+            <input type="text" class="form-control" ngModel name="name">   
+            </div>
+            <div class="form-group">
+                <label for="">Address</label>
+            <input type="text" class="form-control" ngModel name="address">
+            </div>
+            <div class="form-group">
+                <label for="">City</label>
+            <input type="text" class="form-control" ngModel name="city">
+            </div>
+            <div class="form-group">
+                <label for="">State</label>
+            <input type="text" class="form-control" ngModel name="state">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary"> Save </button>
+                </div>
+    </form>
+</div>
